@@ -8,7 +8,7 @@
   <meta name="theme-color" content="#0a0b10" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Inter+Tight:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Inter+Tight:wght@500;600;700&family=Pacifico&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -111,10 +111,58 @@
         </header>
 
         <div class="project-grid" role="list">
-          <div class="project-empty">
-            <div class="project-empty-mark" aria-hidden="true"></div>
-            <p>No active engagements listed at this time.</p>
-          </div>
+          <article class="project-card" role="listitem">
+            <div class="project-logo project-logo-paypulse" aria-label="PayPulse logo">
+              <svg viewBox="0 0 600 340" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                <defs>
+                  <linearGradient id="pp-bg" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#7c3aed"/>
+                    <stop offset="100%" stop-color="#4c1d95"/>
+                  </linearGradient>
+                </defs>
+                <rect width="600" height="340" fill="url(#pp-bg)"/>
+                <path d="M 30 190 L 150 190 L 185 130 L 220 250 L 255 170 L 290 210 L 570 210" stroke="#ffffff" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.22"/>
+                <text x="300" y="195" text-anchor="middle" fill="#ffffff" font-family="Inter Tight, Inter, sans-serif" font-weight="800" font-size="88" letter-spacing="-3">PayPulse</text>
+              </svg>
+            </div>
+            <div class="project-meta">
+              <h3>PayPulse</h3>
+              <p>Payments analytics &amp; operator tooling.</p>
+            </div>
+          </article>
+
+          <article class="project-card" role="listitem">
+            <div class="project-logo project-logo-pensacola" aria-label="Pensacola Storage logo">
+              <svg viewBox="0 0 600 340" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                <rect width="600" height="340" fill="#ffffff"/>
+                <g transform="translate(460, 220)">
+                  <path d="M -6 0 Q -8 -70 -2 -140 L 10 -140 Q 14 -70 10 0 Z" fill="#6b3f1d"/>
+                  <g fill="#6b3f1d" opacity="0.9">
+                    <rect x="-6" y="-100" width="16" height="2"/>
+                    <rect x="-6" y="-72" width="16" height="2"/>
+                    <rect x="-6" y="-44" width="16" height="2"/>
+                  </g>
+                  <g fill="#1f7a3a">
+                    <path d="M 4 -140 Q -50 -180 -95 -155 Q -40 -148 4 -140 Z"/>
+                    <path d="M 4 -140 Q 58 -180 105 -155 Q 50 -148 4 -140 Z"/>
+                    <path d="M 4 -140 Q -30 -200 -70 -210 Q -15 -175 4 -140 Z"/>
+                    <path d="M 4 -140 Q 38 -200 80 -210 Q 25 -175 4 -140 Z"/>
+                    <path d="M 4 -140 Q -8 -210 -18 -225 Q 2 -190 4 -140 Z"/>
+                    <path d="M 4 -140 Q 18 -210 28 -225 Q 10 -190 4 -140 Z"/>
+                  </g>
+                  <circle cx="4" cy="-140" r="6" fill="#4a2810"/>
+                </g>
+                <path id="pensacola-wave" d="M 40 230 Q 170 180, 300 220 T 560 215" fill="none"/>
+                <text fill="#1f7a3a" font-family="Pacifico, cursive" font-size="62" font-weight="400">
+                  <textPath href="#pensacola-wave" startOffset="50%" text-anchor="middle">Pensacola Storage</textPath>
+                </text>
+              </svg>
+            </div>
+            <div class="project-meta">
+              <h3>Pensacola Storage</h3>
+              <p>Self-storage operations on Florida&rsquo;s Gulf Coast.</p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
