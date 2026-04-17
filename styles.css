@@ -97,22 +97,22 @@ main, .nav, .site-footer { position: relative; z-index: 1; }
 .mark {
   display: inline-grid;
   place-items: center;
-  width: 30px;
+  min-width: 44px;
   height: 30px;
+  padding: 0 9px;
   border-radius: 8px;
   background: linear-gradient(135deg, var(--blue) 0%, var(--blue-deep) 100%);
-  color: #fff;
+  color: var(--gold);
   font-family: "Inter Tight", sans-serif;
   font-weight: 700;
-  font-size: 15px;
-  letter-spacing: 0;
+  font-size: 12.5px;
+  letter-spacing: 0.04em;
   box-shadow: 0 0 0 1px rgba(255,255,255,0.08) inset, 0 6px 20px -6px rgba(59, 108, 255, 0.5);
 }
 
-.mark.small { width: 22px; height: 22px; font-size: 11px; border-radius: 6px; }
+.mark.small { min-width: 34px; height: 22px; font-size: 10px; border-radius: 6px; padding: 0 7px; }
 
 .wordmark-text { font-size: 15px; }
-.wordmark-sep { display: inline-block; width: 1px; height: 12px; background: var(--rule-strong); margin: 0 8px; vertical-align: middle; }
 
 .nav-links {
   display: flex;
@@ -363,7 +363,6 @@ section {
   .nav-inner { padding: 12px 20px; }
   .nav-links { gap: 18px; }
   .nav-links a:first-child { display: none; }
-  .wordmark-text .wordmark-sep,
   .wordmark-text .wordmark-suffix { display: none; }
   .hero { padding: 80px 0 72px; }
   section { padding: 72px 0; }
