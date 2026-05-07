@@ -3,26 +3,35 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Finch Business Services — Management &amp; Consulting</title>
-  <meta name="description" content="Finch Business Services. Management and consulting for modern operators." />
-  <meta name="theme-color" content="#0a0b10" />
+  <title>Finch Business Services &mdash; Holding Co.</title>
+  <meta name="description" content="Finch Business Services. A small house of operating businesses across payments, real estate, and specialty services." />
+  <meta name="theme-color" content="#f6f8fc" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Inter+Tight:wght@500;600;700&family=Pacifico&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="grid-bg" aria-hidden="true"></div>
+  <div class="page-bg" aria-hidden="true">
+    <div class="orb orb-a"></div>
+    <div class="orb orb-b"></div>
+    <div class="dot-grid"></div>
+    <div class="spotlight"></div>
+  </div>
 
-  <header class="nav">
+  <header class="nav" id="nav">
     <div class="container nav-inner">
       <a class="wordmark" href="/" aria-label="Finch Business Services">
-        <span class="mark">FBS</span>
-        <span class="wordmark-text"><span>Finch</span> <span class="wordmark-suffix">Business Services</span></span>
+        <span class="mark" aria-hidden="true">
+          <svg viewBox="0 0 120 60" xmlns="http://www.w3.org/2000/svg">
+            <text x="60" y="44" text-anchor="middle" font-family="Pacifico, cursive" font-size="42" fill="#1e3a8a">FBS</text>
+          </svg>
+        </span>
+        <span class="wordmark-text">Finch <span class="wordmark-suffix">Business Services</span></span>
       </a>
       <nav class="nav-links" aria-label="Primary">
-        <a href="#capabilities">Capabilities</a>
-        <a href="#projects">Projects</a>
+        <a href="#operate">How We Operate</a>
+        <a href="#sectors">Where We Work</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
@@ -31,136 +40,199 @@
   <main>
     <section class="hero">
       <div class="container">
-        <p class="eyebrow">Management &middot; Consulting &middot; Advisory</p>
-        <h1 class="hero-title">
-          Operations, data, and strategy<br />
-          for <span class="grad">modern businesses</span>.
+        <p class="eyebrow reveal">Holding Co. &middot; Operations &middot; Capital</p>
+        <h1 class="hero-title reveal">
+          A small house of operating businesses &mdash;<br />
+          <span class="grad">built quietly, run carefully.</span>
         </h1>
-        <p class="hero-lede">
-          Finch Business Services partners with founders and operators to design systems that
-          scale &mdash; from analytics infrastructure to go-to-market execution.
+        <p class="hero-lede reveal">
+          Finch Business Services holds and develops a select group of companies across
+          payments, real estate, and specialty services. We build the systems behind them,
+          and back the operators inside them.
         </p>
-        <div class="hero-cta">
-          <a class="btn btn-primary" href="#contact">Start a conversation</a>
-          <a class="btn btn-ghost" href="#capabilities">What we do</a>
+        <div class="hero-cta reveal">
+          <a class="btn btn-primary" href="#contact">Get in touch</a>
+          <a class="btn btn-ghost" href="#sectors">Where we work</a>
         </div>
       </div>
     </section>
 
-    <section class="capabilities" id="capabilities">
+    <section class="capabilities" id="operate">
       <div class="container">
-        <header class="section-head">
-          <p class="section-kicker">01 &mdash; Capabilities</p>
-          <h2 class="section-title">A small firm, built for leverage.</h2>
+        <header class="section-head reveal">
+          <p class="section-kicker">01 &mdash; How we operate</p>
+          <h2 class="section-title">A patient firm, built for compounding.</h2>
           <p class="section-lede">
-            We work across the stack &mdash; strategic, operational, and technical &mdash;
-            embedding with teams to ship outcomes, not just decks.
+            We work behind the businesses we hold &mdash; and alongside the few outside
+            partners we choose &mdash; on the unglamorous mechanics that make small
+            companies durable.
           </p>
         </header>
 
         <div class="cap-grid">
-          <article class="cap-card">
+          <article class="cap-card reveal">
             <div class="cap-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-4 4 3 5-6"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1l2.1-2.1M17 7l2.1-2.1"/></svg>
             </div>
-            <h3>Data &amp; Analytics</h3>
-            <p>Warehouses, pipelines, dashboards. We instrument the business so decisions stop being guesses.</p>
+            <h3>Operating Discipline</h3>
+            <p>The daily mechanics of well-run businesses &mdash; cadence, accountability, and the boring routines that keep them honest.</p>
           </article>
 
-          <article class="cap-card">
+          <article class="cap-card reveal">
             <div class="cap-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1l2.1-2.1M17 7l2.1-2.1"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-4 4 3 5-6"/></svg>
             </div>
-            <h3>Operations</h3>
-            <p>Process design, automation, and tooling. Cut the busywork so your team focuses on compounding work.</p>
+            <h3>Data &amp; Systems</h3>
+            <p>Instrumentation, reporting, and the quiet infrastructure that turns intuition into evidence over time.</p>
           </article>
 
-          <article class="cap-card">
+          <article class="cap-card reveal">
             <div class="cap-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16M6 20V8l6-4 6 4v12"/><path d="M10 20v-6h4v6"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16M6 20V8l6-4 6 4v12"/><path d="M10 20v-6h4v6"/></svg>
             </div>
-            <h3>Strategy</h3>
-            <p>Market positioning, pricing, and roadmap work &mdash; grounded in first-principles analysis.</p>
+            <h3>Capital &amp; Strategy</h3>
+            <p>Pricing, positioning, and capital decisions made from first principles &mdash; sized to the business, not the spreadsheet.</p>
           </article>
 
-          <article class="cap-card">
+          <article class="cap-card reveal">
             <div class="cap-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg>
             </div>
-            <h3>Advisory</h3>
-            <p>Fractional partnership for owners navigating growth, capital, or succession decisions.</p>
+            <h3>Owner Partnership</h3>
+            <p>Fractional partnership for owners navigating growth, capital events, and succession &mdash; on a long clock.</p>
           </article>
 
-          <article class="cap-card">
+          <article class="cap-card reveal">
             <div class="cap-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17l6-6 4 4 6-6"/><path d="M14 5h6v6"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17l6-6 4 4 6-6"/><path d="M14 5h6v6"/></svg>
             </div>
-            <h3>Growth</h3>
-            <p>Acquisition funnels, retention loops, and measurement &mdash; built for sustainable unit economics.</p>
+            <h3>Selective Growth</h3>
+            <p>Patient acquisition and retention work, sized to unit economics that hold up after the campaign ends.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="projects" id="projects">
+    <section class="sectors" id="sectors">
       <div class="container">
-        <header class="section-head">
-          <p class="section-kicker">02 &mdash; Ongoing Projects</p>
-          <h2 class="section-title">What we&rsquo;re building.</h2>
-          <p class="section-lede">Active engagements under the Finch umbrella. More soon.</p>
+        <header class="section-head reveal">
+          <p class="section-kicker">02 &mdash; Where we work</p>
+          <h2 class="section-title">A few industries. Quietly.</h2>
+          <p class="section-lede">
+            Active engagements under the Finch umbrella. Names withheld &mdash; the work
+            speaks where it&rsquo;s ready to.
+          </p>
         </header>
 
-        <div class="project-grid" role="list">
-          <article class="project-card" role="listitem">
-            <div class="project-logo project-logo-paypulse" aria-label="PayPulse logo">
-              <svg viewBox="0 0 600 340" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <div class="sector-grid" role="list">
+          <article class="sector-card reveal" role="listitem">
+            <div class="sector-art" aria-hidden="true">
+              <svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
                 <defs>
-                  <linearGradient id="pp-bg" x1="0" y1="0" x2="1" y2="1">
-                    <stop offset="0%" stop-color="#7c3aed"/>
-                    <stop offset="100%" stop-color="#4c1d95"/>
+                  <linearGradient id="s1" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#dbeaff"/>
+                    <stop offset="100%" stop-color="#ffffff"/>
                   </linearGradient>
                 </defs>
-                <rect width="600" height="340" fill="url(#pp-bg)"/>
-                <path d="M 30 190 L 150 190 L 185 130 L 220 250 L 255 170 L 290 210 L 570 210" stroke="#ffffff" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.22"/>
-                <text x="300" y="195" text-anchor="middle" fill="#ffffff" font-family="Inter Tight, Inter, sans-serif" font-weight="800" font-size="88" letter-spacing="-3">PayPulse</text>
+                <rect width="200" height="120" fill="url(#s1)"/>
+                <path d="M 10 80 L 60 80 L 75 50 L 90 95 L 105 65 L 120 80 L 190 80" stroke="#3b6cff" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+                <circle cx="75" cy="50" r="2.5" fill="#c9a24a"/>
+                <circle cx="90" cy="95" r="2.5" fill="#c9a24a"/>
               </svg>
             </div>
-            <div class="project-meta">
-              <h3>PayPulse</h3>
-              <p>Payments analytics &amp; operator tooling.</p>
+            <div class="sector-meta">
+              <span class="sector-tag">Active</span>
+              <h3>Payments</h3>
+              <p>Operator tooling and analytics for transaction-led businesses.</p>
             </div>
           </article>
 
-          <article class="project-card" role="listitem">
-            <div class="project-logo project-logo-pensacola" aria-label="Pensacola Storage logo">
-              <svg viewBox="0 0 600 340" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-                <rect width="600" height="340" fill="#ffffff"/>
-                <g transform="translate(460, 220)">
-                  <path d="M -6 0 Q -8 -70 -2 -140 L 10 -140 Q 14 -70 10 0 Z" fill="#6b3f1d"/>
-                  <g fill="#6b3f1d" opacity="0.9">
-                    <rect x="-6" y="-100" width="16" height="2"/>
-                    <rect x="-6" y="-72" width="16" height="2"/>
-                    <rect x="-6" y="-44" width="16" height="2"/>
-                  </g>
-                  <g fill="#1f7a3a">
-                    <path d="M 4 -140 Q -50 -180 -95 -155 Q -40 -148 4 -140 Z"/>
-                    <path d="M 4 -140 Q 58 -180 105 -155 Q 50 -148 4 -140 Z"/>
-                    <path d="M 4 -140 Q -30 -200 -70 -210 Q -15 -175 4 -140 Z"/>
-                    <path d="M 4 -140 Q 38 -200 80 -210 Q 25 -175 4 -140 Z"/>
-                    <path d="M 4 -140 Q -8 -210 -18 -225 Q 2 -190 4 -140 Z"/>
-                    <path d="M 4 -140 Q 18 -210 28 -225 Q 10 -190 4 -140 Z"/>
-                  </g>
-                  <circle cx="4" cy="-140" r="6" fill="#4a2810"/>
+          <article class="sector-card reveal" role="listitem">
+            <div class="sector-art" aria-hidden="true">
+              <svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+                <defs>
+                  <linearGradient id="s2" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#e7f0ff"/>
+                    <stop offset="100%" stop-color="#ffffff"/>
+                  </linearGradient>
+                </defs>
+                <rect width="200" height="120" fill="url(#s2)"/>
+                <g stroke="#1e3a8a" stroke-width="1.4" fill="none" opacity="0.85">
+                  <rect x="40" y="55" width="40" height="45"/>
+                  <rect x="80" y="40" width="40" height="60"/>
+                  <rect x="120" y="65" width="40" height="35"/>
                 </g>
-                <path id="pensacola-wave" d="M 40 230 Q 170 180, 300 220 T 560 215" fill="none"/>
-                <text fill="#1f7a3a" font-family="Pacifico, cursive" font-size="62" font-weight="400">
-                  <textPath href="#pensacola-wave" startOffset="50%" text-anchor="middle">Pensacola Storage</textPath>
-                </text>
+                <line x1="20" y1="100" x2="180" y2="100" stroke="#c9a24a" stroke-width="1.4"/>
               </svg>
             </div>
-            <div class="project-meta">
-              <h3>Pensacola Storage</h3>
-              <p>Self-storage operations on Florida&rsquo;s Gulf Coast.</p>
+            <div class="sector-meta">
+              <span class="sector-tag">Active</span>
+              <h3>Real Estate</h3>
+              <p>Storage and small-format commercial assets on the Gulf Coast.</p>
+            </div>
+          </article>
+
+          <article class="sector-card reveal" role="listitem">
+            <div class="sector-art" aria-hidden="true">
+              <svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+                <defs>
+                  <linearGradient id="s3" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#eaf2ff"/>
+                    <stop offset="100%" stop-color="#ffffff"/>
+                  </linearGradient>
+                </defs>
+                <rect width="200" height="120" fill="url(#s3)"/>
+                <path d="M 10 70 Q 50 50 100 70 T 190 70" stroke="#3b6cff" stroke-width="1.4" fill="none" opacity="0.7"/>
+                <path d="M 10 85 Q 50 65 100 85 T 190 85" stroke="#c9a24a" stroke-width="1.2" fill="none" opacity="0.7"/>
+              </svg>
+            </div>
+            <div class="sector-meta">
+              <span class="sector-tag muted">In development</span>
+              <h3>Hospitality</h3>
+              <p>Small-format leisure assets where service and systems both matter.</p>
+            </div>
+          </article>
+
+          <article class="sector-card reveal" role="listitem">
+            <div class="sector-art" aria-hidden="true">
+              <svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+                <defs>
+                  <linearGradient id="s4" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#e7f0ff"/>
+                    <stop offset="100%" stop-color="#ffffff"/>
+                  </linearGradient>
+                </defs>
+                <rect width="200" height="120" fill="url(#s4)"/>
+                <g stroke="#1e3a8a" stroke-width="1.4" fill="none" opacity="0.8">
+                  <circle cx="100" cy="60" r="22"/>
+                  <circle cx="100" cy="60" r="10"/>
+                </g>
+                <line x1="100" y1="20" x2="100" y2="100" stroke="#c9a24a" stroke-width="1" opacity="0.6"/>
+                <line x1="60" y1="60" x2="140" y2="60" stroke="#c9a24a" stroke-width="1" opacity="0.6"/>
+              </svg>
+            </div>
+            <div class="sector-meta">
+              <span class="sector-tag muted">In development</span>
+              <h3>Specialty Services</h3>
+              <p>Recurring-revenue service businesses with operator-led upside.</p>
+            </div>
+          </article>
+
+          <article class="sector-card reveal sector-stealth" role="listitem">
+            <div class="sector-art" aria-hidden="true">
+              <svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+                <rect width="200" height="120" fill="#0f1620"/>
+                <g stroke="#c9a24a" stroke-width="1.2" fill="none" opacity="0.7">
+                  <rect x="78" y="50" width="44" height="36" rx="3"/>
+                  <path d="M 86 50 V 40 a 14 14 0 0 1 28 0 V 50"/>
+                </g>
+                <circle cx="100" cy="68" r="3" fill="#c9a24a"/>
+              </svg>
+            </div>
+            <div class="sector-meta">
+              <span class="sector-tag stealth">Stealth</span>
+              <h3>Undisclosed</h3>
+              <p>A new venture in formation. More when it&rsquo;s ready.</p>
             </div>
           </article>
         </div>
@@ -168,26 +240,38 @@
     </section>
 
     <section class="contact" id="contact">
-      <div class="container contact-inner">
+      <div class="container contact-inner reveal">
         <div>
           <p class="section-kicker">03 &mdash; Contact</p>
           <h2 class="section-title">Let&rsquo;s talk.</h2>
           <p class="section-lede">Short inquiries, long engagements &mdash; either is welcome.</p>
         </div>
-        <a class="btn btn-primary btn-large" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=chase@finchbusinessserv.com" target="_blank" rel="noopener">chase@finchbusinessserv.com</a>
+        <a class="btn btn-contact btn-large" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=chase@finchbusinessserv.com" target="_blank" rel="noopener">chase@finchbusinessserv.com</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <div class="footer-brand">
-        <span>&copy; 2026 Finch Business Services, LLC</span>
+      <div class="footer-col footer-brand">
+        <span class="footer-mark" aria-hidden="true">
+          <svg viewBox="0 0 120 60" xmlns="http://www.w3.org/2000/svg">
+            <text x="60" y="44" text-anchor="middle" font-family="Pacifico, cursive" font-size="40" fill="#e4c76d">FBS</text>
+          </svg>
+        </span>
+        <span class="footer-copy">&copy; 2026 Finch Business Services, LLC</span>
       </div>
-      <div class="footer-meta">
+      <div class="footer-col footer-meta">
+        <span class="footer-label">Office</span>
         <span>Pensacola, FL</span>
+      </div>
+      <div class="footer-col footer-legal">
+        <span class="footer-label">Inquiries</span>
+        <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=chase@finchbusinessserv.com" target="_blank" rel="noopener">chase@finchbusinessserv.com</a>
       </div>
     </div>
   </footer>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
