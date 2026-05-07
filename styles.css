@@ -49,6 +49,9 @@ body {
   overflow-x: hidden;
 }
 
+html.is-routing body { visibility: hidden; }
+html.is-ready body { visibility: visible; }
+
 /* ---- Background field (orbs, grid, cursor spotlight) ---- */
 .page-bg {
   position: fixed;

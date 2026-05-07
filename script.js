@@ -35,21 +35,18 @@
     return ROUTES[seg] ? seg : "";
   }
 
-  // Replay redirect from 404.html
-  try {
-    const replay = sessionStorage.getItem("fbs:redirect");
-    if (replay) {
-      sessionStorage.removeItem("fbs:redirect");
-      const route = pathToRoute(replay);
-      if (route) history.replaceState({ route }, "", "/" + route);
-    }
-  } catch (_) {}
-
-  // Initial scroll based on URL
+  // Initial scroll based on URL (subpages: /operate, /sectors, /contact).
+  // body is hidden via .is-routing on those pages; we scroll, then reveal.
   const initialRoute = pathToRoute(window.location.pathname);
   if (initialRoute) {
-    // Defer one frame so layout is stable
-    requestAnimationFrame(() => scrollToRoute(initialRoute, "auto"));
+    requestAnimationFrame(() => {
+      scrollToRoute(initialRoute, "auto");
+      document.documentElement.classList.remove("is-routing");
+      document.documentElement.classList.add("is-ready");
+    });
+  } else {
+    document.documentElement.classList.remove("is-routing");
+    document.documentElement.classList.add("is-ready");
   }
 
   // Intercept nav clicks
