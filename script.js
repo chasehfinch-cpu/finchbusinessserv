@@ -4,6 +4,80 @@
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const isTouch = window.matchMedia("(hover: none), (pointer: coarse)").matches;
 
+  // --- Clean-URL routing (/operate, /sectors, /contact) --------------------
+  // Single-page experience with real-looking URLs. Direct hits to /contact
+  // are caught by 404.html and replayed via sessionStorage.
+  const ROUTES = {
+    operate: "operate",
+    sectors: "sectors",
+    contact: "contact",
+  };
+
+  function sectionTopFor(id) {
+    const el = document.getElementById(id);
+    if (!el) return 0;
+    const nav = document.getElementById("nav");
+    const navH = nav ? nav.getBoundingClientRect().height : 0;
+    return el.getBoundingClientRect().top + window.scrollY - navH - 8;
+  }
+
+  function scrollToRoute(route, behavior) {
+    const id = ROUTES[route];
+    if (!id) {
+      window.scrollTo({ top: 0, behavior: behavior || "auto" });
+      return;
+    }
+    window.scrollTo({ top: sectionTopFor(id), behavior: behavior || "smooth" });
+  }
+
+  function pathToRoute(pathname) {
+    const seg = (pathname || "/").replace(/^\/+|\/+$/g, "").toLowerCase();
+    return ROUTES[seg] ? seg : "";
+  }
+
+  // Replay redirect from 404.html
+  try {
+    const replay = sessionStorage.getItem("fbs:redirect");
+    if (replay) {
+      sessionStorage.removeItem("fbs:redirect");
+      const route = pathToRoute(replay);
+      if (route) history.replaceState({ route }, "", "/" + route);
+    }
+  } catch (_) {}
+
+  // Initial scroll based on URL
+  const initialRoute = pathToRoute(window.location.pathname);
+  if (initialRoute) {
+    // Defer one frame so layout is stable
+    requestAnimationFrame(() => scrollToRoute(initialRoute, "auto"));
+  }
+
+  // Intercept nav clicks
+  document.querySelectorAll("a[data-route]").forEach((a) => {
+    a.addEventListener("click", (e) => {
+      if (e.metaKey || e.ctrlKey || e.shiftKey || e.button === 1) return;
+      const route = a.getAttribute("data-route");
+      if (!ROUTES[route]) return;
+      e.preventDefault();
+      history.pushState({ route }, "", "/" + route);
+      scrollToRoute(route, "smooth");
+    });
+  });
+
+  // Wordmark / home links back to "/"
+  document.querySelectorAll('a[href="/"]').forEach((a) => {
+    a.addEventListener("click", (e) => {
+      if (e.metaKey || e.ctrlKey || e.shiftKey || e.button === 1) return;
+      e.preventDefault();
+      history.pushState({ route: "" }, "", "/");
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  });
+
+  window.addEventListener("popstate", () => {
+    scrollToRoute(pathToRoute(window.location.pathname), "smooth");
+  });
+
   // --- Reveal on scroll -----------------------------------------------------
   const revealEls = document.querySelectorAll(".reveal");
 
